@@ -44,12 +44,13 @@ export default function EditForm({
                 text: text.trim()
             }
 
-            await fetch(apiHostURL + '/api/posts/'+ post._id, {
+            await fetch(apiHostURL + '/api/posts/' + post._id, {
                 method: 'put',
                 body: JSON.stringify(updated)
             });
 
             setLoading(false);
+            router.refresh();
             router.push('/dashboard');
         } catch (err) {
             setLoading(false);

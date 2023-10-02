@@ -15,11 +15,7 @@ export const GET = async (request) => {
         const posts = await Post.find(username && { owner: username });
         //ако username e null, ще върне всички записи от колекцията,
         //ако username е стринг ще върне само тези записи на които пропъртито owner == username, aко няма такива ще върне []
-        return NextResponse.json(posts, { status: 200, headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-            'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-          } });
+        return NextResponse.json(posts, { status: 200});
     } catch (err) {
         return NextResponse.json('Database Error', { status: 400 });
     }
@@ -32,7 +28,7 @@ export const POST = async (request) => {
 
         const created = await Post.create(post);
 
-        return NextResponse.json(post, { status: 200 });
+        return NextResponse.json(created, { status: 200 });
     } catch (err) {
         return NextResponse.json('Database Error', { status: 400 });
     }
