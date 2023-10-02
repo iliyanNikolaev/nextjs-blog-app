@@ -1,0 +1,11 @@
+.error{
+    background-color: red;
+    text-align: center;
+    padding: 2px 6px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.hidden{
+    display: none;
+}

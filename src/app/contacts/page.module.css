@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.mainTitle{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 32px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.linkedin{
+    position: absolute;
+    bottom: -3px;
+    left: 130px;
+}
+
+.last{
+    margin-bottom: 300px;
+}

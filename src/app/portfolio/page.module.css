@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTitle{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.projects{
+    display: flex;
+    gap: 50px;
+}
+
+.project{
+    border: 5px solid #5166ab;
+    color: #d4d4d4;
+    border-radius: 5px;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    background-size: cover !important;
+}
+
+.project:nth-child(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/movies.jpg")
+}
+
+.project:nth-child(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/social.avif")
+}
+
+.innerTitle{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project:hover .innerTitle{
+    color: #5166ab;
+}
+
+.project:hover{
+    border: 5px solid #5166ab;
+}

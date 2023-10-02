@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.upper{
+    display: flex;
+    align-items: center;
+}
+
+.left, .postImg{
+    flex: 1;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.desc{
+    font-size: 32px;
+}
+
+.owner{
+    display: flex;
+}
+
+.author{
+    font-size: 18px;
+}
+
+.author span:nth-child(1){
+    font-weight: bold;
+}
+
+.author span:nth-child(2){
+    font-style: italic;
+}
+
+.postImg{
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid #5166ab;
+    filter: brightness(90%);
+}
+
+.text{
+    font-size: 24px;
+}

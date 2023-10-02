@@ -1,0 +1,19 @@
+.container{
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-attachment: transparent;
+	backdrop-filter: blur(35px);
+}
+
+.span{
+    cursor: default;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}

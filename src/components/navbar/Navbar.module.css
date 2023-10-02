@@ -1,0 +1,30 @@
+.container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.img{
+    filter: brightness(70%);
+}
+
+.logo span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    gap: 36px;
+}
+
+.links a {
+    font-weight: bold;
+}
